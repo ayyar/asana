@@ -52,8 +52,8 @@ Sample:
     asana_api.create_project('test project', myspaces[0]['id'])
 
     # create a new task
-    asana_api.create_task('yetanotherapitest', myspaces[0]['id'], assignee_status='later', notes='some notes')
+    mytask = asana_api.create_task('yetanotherapitest', myspaces[0]['id'], assignee_status='later', notes='some notes')
 
     # add a story to task
-    asana_api.add_story(mytask, 'omgwtfbbq')
+    asana_api.add_story(mytask['id'], 'omgwtfbbq')
 
